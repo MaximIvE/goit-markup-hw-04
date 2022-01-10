@@ -11,6 +11,8 @@
   --first-title-color: #ffffff;
   --second-title-color: #212121;
   --p-title-color: #757575;  
+  --icons-color: #afb1b8;
+
 }
 /* 
 *,
@@ -290,9 +292,35 @@ border-radius: 0px 0px 4px 4px;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--p-title-color);
+  margin-bottom: 16px;
 }
 
-
+.social-list{
+  display: flex;
+  justify-content: center;
+}
+.social-link + .social-link{
+  margin-left: 10px;
+}
+.team-social-link{
+  display:flex;
+  height: 44px;
+  width: 44px;
+  /* background-color: teal; */
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:var(--icons-color);
+}
+.team-social-icon{
+  fill: currentColor;
+}
+.team-social-link:hover,
+.team-social-link:focus{
+  background-color: var(--accent-color);
+  color: var(--background);
+}
 /* -----PORTFOLIO----------- */
 .filter{
   display:flex;
