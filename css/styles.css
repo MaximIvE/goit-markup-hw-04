@@ -178,10 +178,13 @@ img {
 
 
 .hero {
+  
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
   max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
 
   background-color: var(--footer-color);
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/img.jpg"); 
@@ -229,6 +232,7 @@ padding-top: 0
 
 .benefits-list{
   display: flex;
+  justify-content: center;
 }
 .benefits-blank{
   margin-right: 30px;
@@ -321,6 +325,34 @@ border-radius: 0px 0px 4px 4px;
   background-color: var(--accent-color);
   color: var(--background);
 }
+
+/* -----CLIENTS----- */
+.clients-icons-list+.clients-icons-list{
+  margin-left: 30px;
+}
+
+.clients-logo{
+  height: 92px;
+  width: 170px;
+
+  border: 1px solid var(--icons-color);
+  box-sizing: border-box;
+  border-radius: 4px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:var(--icons-color);
+}
+.clients-icon{
+  fill: currentColor;
+}
+.clients-logo:hover,
+.clients-logo:focus{
+  border-color: var(--accent-color);
+  color: var(--accent-color);
+}
+
 /* -----PORTFOLIO----------- */
 .filter{
   display:flex;
