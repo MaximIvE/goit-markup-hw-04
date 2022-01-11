@@ -241,6 +241,17 @@ padding-top: 0
 .benefits-blank:last-child{
 	margin-right: 0;
 }
+.benefits-vector-box{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+  height: 120px;
+  border-radius: 4px;
+  background-color: var(--background-elements);
+  margin-bottom: 30px;
+}
+
 .benefits-title{
   margin-bottom: 10px;
   font-weight: 700;
@@ -336,7 +347,6 @@ border-radius: 0px 0px 4px 4px;
   width: 170px;
 
   border: 1px solid var(--icons-color);
-  box-sizing: border-box;
   border-radius: 4px;
 
   display: flex;
