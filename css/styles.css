@@ -5,6 +5,7 @@
   --footer-cont-color: rgba(255, 255, 255, 0.6);
   --footer-hover-text-one: rgba(255, 255, 255, 0.8);
   --footer-hover-text-two: rgba(255, 255, 255, 0.4);
+  --footer-icons-background: rgba(255, 255, 255, 0.1);
   --footer-hover-accent: rgba(33, 149, 243, 0.9);
   --second-btn-color:#188CE8;
   --accent-color: #2196F3;
@@ -257,14 +258,15 @@ padding-top: 0
   background-color: var(--background-elements);
   margin-bottom: 30px;
 }
-
-.benefits-title{
-  margin-bottom: 10px;
+.title-upercase{
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+}
+.benefits-title{
+  margin-bottom: 10px;
   color: var(--second-title-color);
 }
 .benefits-text{
@@ -323,7 +325,7 @@ border-radius: 0px 0px 4px 4px;
 .social-link + .social-link{
   margin-left: 10px;
 }
-.team-social-link{
+.social-link{
   display:flex;
   height: 44px;
   width: 44px;
@@ -332,8 +334,11 @@ border-radius: 0px 0px 4px 4px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.team-social-link{
   color:var(--icons-color);
 }
+
 .team-social-icon{
   fill: currentColor;
 }
@@ -473,4 +478,26 @@ border-radius: 0px 0px 4px 4px;
 .footer-cont:hover,
 .footer-cont:focus{
   color: var(--footer-hover-text-two);
+}
+.footer-block{
+  display: flex;
+}
+.footer-links-block{
+  margin-left: 70px;
+  padding-top: 12px;
+}
+.footer-icons-title{
+  margin-bottom: 20px;
+  color: var(--background);
+}
+.footer-social-link{
+  background-color: var(--footer-icons-background); 
+}
+
+.footer-social-icon{
+  fill: var(--background);
+}
+.footer-social-link:hover,
+.footer-social-link:focus{
+  background-color: var(--accent-color);
 }
